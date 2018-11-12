@@ -1,0 +1,25 @@
+.historia-section {
+    border-top: 4px solid #25bfb3;
+    border-bottom: 4px solid #25bfb3;
+    background-image: url(../img/open_book.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-origin: content-box;
+    justify-content: flex-end;
+}
+
+.galeria-section {
+    border-top: 4px solid #da7d78;
+    border-bottom: 4px solid #da7d78;
+    background-image: url(../img/camera.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-origin: content-box;
+    justify-content: flex-end;
+}
+
+
+@media screen and (max-width:768px) {
+}

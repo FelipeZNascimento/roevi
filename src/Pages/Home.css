@@ -1,0 +1,13 @@
+.home {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}

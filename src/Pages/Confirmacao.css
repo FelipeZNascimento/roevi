@@ -1,0 +1,11 @@
+.confirmacao-section {
+    border-top: 4px solid #f4b3a1;
+    border-bottom: 4px solid #f4b3a1;
+    background-image: url(../img/confirmation.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-origin: content-box;
+    justify-content: flex-end;
+
+}

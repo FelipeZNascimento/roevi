@@ -1,0 +1,11 @@
+.presentes-section {
+    border-top: 4px solid #ecd7a0;
+    border-bottom: 4px solid #ecd7a0;
+    background-image: url(../img/gift.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-origin: content-box;
+    justify-content: flex-end;
+
+}
