@@ -128,10 +128,6 @@ class Confirmacao extends Component {
             )
         });
 
-        const renderForm = {
-            
-        }
-
         return (
             <div>
                 <Menu selected={4}/>

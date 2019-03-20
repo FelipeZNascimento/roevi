@@ -4,7 +4,7 @@ import loading from'../img/loading.gif';
 class Loading extends Component {
     render () {
         return (
-            <p><img  src={loading} alt="Loading"/></p>
+            <p><img src={loading} alt="Loading"/></p>
         )
     }
 }
