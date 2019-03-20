@@ -163,7 +163,9 @@ for (let i = 0; i < images.length; i++) {
         case 39:
             caption = 'E continuamos nossas aventuras... A próxima é o casamento! Esperamos vocês lá!';
             break;
-
+        case 40:
+            caption = 'Sashimi, nossa filha  💙🐶';
+            break;
         default:
             caption = '';
     }
@@ -224,7 +226,7 @@ class Galeria extends Component {
                 <Menu selected={1}/>
                 <div className="page-container">
                     <div className="gallery">
-                        <p className="title">Galeria</p>
+                        <h1 className="center-align">Galeria</h1>
                         <GalleryThumbnails 
                             images={galleryThumbs}
                             onClick={this.openLightbox}/>

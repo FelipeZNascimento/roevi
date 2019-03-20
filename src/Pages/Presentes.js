@@ -8,9 +8,11 @@ class Presentes extends Component {
             <div>
                 <Menu selected={3}/>
                 <div className="page-container">
-                    <div className="horizontal-section presentes-section">
-                        Em breve...
-                    </div>
+                    <a href="https://sites.icasei.com.br/robertaevictor/pt_br/store/9/1/1" target="_blank">
+                        <div className="horizontal-section presentes-section">
+                            Presentes
+                        </div>
+                    </a>
                 </div>
             </div>
         );

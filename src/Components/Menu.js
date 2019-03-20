@@ -7,7 +7,7 @@ var menuButtons = [
     {id:1, description: 'Ro ♥ Vi', link: 'casal'},
     {id:2, description: 'Casamento', link: 'casamento'},
     {id:3, description: 'Presentes', link: 'presentes'},
-    {id:4, description: 'Confirmação', link: 'confirmacao'}
+    {id:4, description: 'Confirmação', link: 'confirmacao'},
 ];
 
 class Button extends Component {

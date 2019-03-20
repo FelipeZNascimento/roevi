@@ -9,8 +9,8 @@ class Historia extends Component {
                 <Menu selected={1}/>
                 <div className="page-container">
                     <div className="history">
-                        <p className="title">História</p>
-                        <p>♥</p>
+                        <h1 className="center-align">História</h1>
+                        <p className="center-align">♥</p>
                         <p>A história do Vi e da Rô começa antes mesmo de se conhecerem. Vizinhos de porta em um prédio de Curitiba, os dois passavam a maior parte dos dias no Hospital de Clínicas da UFPR. Ele fazendo Medicina e ela Residência em Fisioterapia Pediátrica, porém jamais se esbarraram pelos (muitos) corredores do HC. Quando chovia ela sempre deixava suas sapatilhas do lado de fora da porta e só por isso dava pra saber que era uma mulher que morava ali. Ele nunca a via. Já no apartamento dele não dava nem pra saber que alguém morava ( a não ser quando ele viajou, sua geladeira estragou, e a Rô achou que alguém estava morto lá dentro. Garanto que essa história é muito boa, termina com ele tendo que se desfazer da geladeira, mas a história é muito longa pra ser contada aqui hahaha).</p>
 
                         <p>Ela morava naquele apartamento desde que se mudou de Bauru – SP para Curitiba; foi o primeiro apartamento que visitou e não quis ver mais nenhum (parece que quando ela gosta de uma coisa é sempre assim, foi assim com o vestido de noiva, inclusive!). E ainda bem que ela não visitou mais nenhum, senão talvez essa história nem estaria sendo escrita!</p>
@@ -22,9 +22,8 @@ class Historia extends Component {
                         <p>Depois de pouco mais de dois anos de MUITO amor, risadas infinitas até perder o fôlego, palhaçadas, companheirismo, viagens, muuuuitos vinhos (ela aprendeu a degustar um bom vinho com ele), abraços apertados e esmagadores, beijos, cosquinhas, muitas horas nas poltronas de velhos deles, e de torcerem muito um pelo outro, veio o pedido de casamento mais mágico e emocionante possível, no melhor lugar do mundo: Magic Kingdom, Disney, em frente ao Castelo da Cinderela! De conto de fadas mesmo!!! Ali, naquele momento, com centenas de pessoas em volta, eram só os dois. Os dois e o Castelo! O melhor dia da vida deles. Um dia de muita emoção, choro e uma alegria que não cabia dentro deles.</p>
 
                         <p>E agora esperamos vocês para nossa próxima etapa, para junto com a gente participarem do próximo capítulo dessa linda história de amor, o nosso casamento! E que venha o início do resto das nossas vidas!</p>
-                        <p>♥</p>
-                    </div>
-                    
+                        <p className="center-align">♥</p>
+                    </div>                    
                 </div>
             </div>
         );

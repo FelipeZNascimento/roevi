@@ -1,11 +1,114 @@
-.confirmacao-section {
-    border-top: 4px solid #f4b3a1;
-    border-bottom: 4px solid #f4b3a1;
-    background-image: url(../img/confirmation.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-    background-origin: content-box;
-    justify-content: flex-end;
+.confirmation {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    background-color: rgba(255,255,255,0.8);
+    padding: 0 100px;
+    overflow-y: auto;
+}
+.confirmation .title {
+    font-weight: bold;
+    font: 400 100px/1.3 'Arizonia', Helvetica, sans-serif;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+    font-size: 64px;
+    padding: 0;
+    margin: 10px 0;
+}
+.confirmation p {
+    text-align: center;
+    font-size: 18px;
+    clear: both;
+}
 
+.confirmation::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.confirmation::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0);
+}
+ 
+.confirmation::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.confirmation .form-container {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.confirmation form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.confirmation input {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.validation-false {
+    box-shadow: 0px 0px 2px 1px #f00;
+}
+
+.confirmation button {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 4px;
+    /* background-color: rgba(255,255,255,0.8); */
+    transition: background-color 0.5s ease;
+}
+.button-adult {
+    border: 2px solid rgb(116,209,224);
+    background-color: rgba(255,255,255,0.8);
+}
+.button-selected {
+    background-color: rgba(116,209,224,0.5) !important;
+}
+.button-submit {
+    background-color: rgba(255,255,255,0.8);
+    border: 2px solid rgb(37,191,179);
+}
+.button-submit:hover {
+    background-color: rgba(37,191,179,0.5);
+}
+.guest-line {
+    margin: 10px 0;
+}
+.button-add {
+    width: 100%;
+    border: 2px solid rgb(116,209,224);
+    background-color: rgba(116,209,224,0.7);
+}
+.button-add:hover {
+    background-color: rgba(116,209,224,0.3);
+}
+
+@media screen and (max-width:768px) {
+    .confirmation {
+        padding: 0 10px;
+    }
+
+    .confirmation .form-container {
+        width: 200px;
+    }
+
+    .confirmation button, .confirmation input {
+        font-size: 16px;
+    }
 }

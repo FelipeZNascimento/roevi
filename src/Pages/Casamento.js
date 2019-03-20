@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Casamento.css';
 import Menu from '../Components/Menu';
+import { Link } from 'react-router-dom'
 
 class Casamento extends Component {
     render() {
@@ -8,9 +9,16 @@ class Casamento extends Component {
             <div>
                 <Menu selected={2}/>
                 <div className="page-container">
-                    <div className="horizontal-section casamento-section">
-                        Em breve...
-                    </div>
+                    <Link to={'/casamento/evento'}>
+                        <div className="horizontal-section event-section">
+                            Evento
+                        </div>
+                    </Link>
+                    <Link to={'/casamento/hospedagem'}>
+                        <div className="horizontal-section hotel-section">
+                            Hospedagem
+                        </div>
+                    </Link>
                 </div>
             </div>
         );
