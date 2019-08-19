@@ -2,7 +2,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
     width: 100vw;
     box-sizing: border-box;
     border-top: 4px solid white;
@@ -26,7 +25,7 @@
 }
 
 .confirmation::-webkit-scrollbar {
-    width: 5px;
+    width: 15px;
 }
  
 .confirmation::-webkit-scrollbar-track {

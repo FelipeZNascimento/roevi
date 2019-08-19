@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './Evento.css';
 import Menu from '../Components/Menu';
-import garcas from'../img/garcas.jpg';
-import cave from'../img/cave.jpg';
 
 class Evento extends Component {
     render() {

@@ -33,7 +33,7 @@ class Hospedagem extends Component {
                             <img src={cave} alt="Cave do Sul"/>
                             <p>Endereço: Rua José Costa, 1087 - São Pedro da Aldeia, RJ - 28940-000</p>
                             <p>Distância: 3,3km (9min de carro)</p>
-                            <p>Contato: +55 22 2627-2616</p>
+                            <p>Contato: +55 22 2320-8119</p>
                             <p><a href="https://www.pousadacavedosol.com.br">Website</a></p>
                         </div>
                         <div className="pousada">

@@ -2,16 +2,8 @@ import React, { Component } from 'react';
 import './Confirmacao.css';
 import Menu from '../Components/Menu';
 import Loading from '../Components/Loading';
-import axios from 'axios';
+import * as emailjs from 'emailjs-com';
 
-const initialState = {
-    name: "",
-    phone: "",
-    email: "",
-    guests: [],
-    formValidation: null,
-    loading: false
-}
 class Confirmacao extends Component {
     constructor(props) {
         super(props);
@@ -23,6 +15,21 @@ class Confirmacao extends Component {
             formValidation: null,
             loading: false
         };
+        
+        this.resetState = this.resetState.bind(this);
+    }
+
+    resetState () {
+        const initialState = {
+            name: "",
+            phone: "",
+            email: "",
+            guests: [],
+            formValidation: null,
+            loading: false
+        }
+        
+        this.setState(initialState);
     }
 
     addGuest () {
@@ -51,11 +58,10 @@ class Confirmacao extends Component {
     }
 
     handleSubmit () {
-        let data = "Olá!\nAcabei de receber novas confirmações para o casamento!\n\n\n\n"
         if (this.state.name !== "" && this.state.phone !== "" && this.state.email !== "") {
-            data += this.state.name + " - " + this.state.phone + "\n" + this.state.email;
+            let data = this.state.name + " - " + this.state.phone + "<br>" + this.state.email;
             if (this.state.guests.length > 0)
-                data += "\n\nE seus convidados:\n";
+                data += "<br><br>E seus convidados:<br>";
     
             for (let i = 0; i < this.state.guests.length; i++) {
                 let guest = this.state.guests[i];
@@ -64,25 +70,23 @@ class Confirmacao extends Component {
         
                     if (!guest.isAdult)
                         data += " (Criança)";
-        
-                }
-            }
 
-            data += "\n\nEssa mensagem foi enviada automaticamente.";
-            
-            this.setState({
-                loading: true
-            });    
-
-            axios.get(`https://www.mailer.bluedog.ga/mailer`, { 
-                params: {
-                    body: data 
+                    data += "<br>";       
                 }
-            })
-            .then(res => {
-                alert ("Confirmação feita com sucesso!");
-                this.setState(initialState);
-            })
+            }           
+            this.setState({loading: true});
+
+            var self = this;
+
+            emailjs.send("confirmacao_ro_e_vi", "template_Itm66SyS", {"message_html":data}, "user_lZxwF6H2GW4ymTWAPcV8Y")
+                .then (function (response) {
+                    alert ("Confirmação feita com sucesso!");
+                    self.resetState();
+                }, function (err) {
+                    alert ("Erro no envio dos seus dados, favor tentar novamente!");
+                    self.setState({loading: false});
+                });
+
         } else {
             this.setState({
                 formValidation: false
